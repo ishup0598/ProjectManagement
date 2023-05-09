@@ -9,9 +9,9 @@ namespace Model
 {
     public class User
     {
-        public string Employeename { get; set; }
-        [Required(ErrorMessage = "Emp code required")]
-        public string EmployeeCode { get; set; }
+        [Required(ErrorMessage = "Username required")]
+        public string Username { get; set; }
+
         [Required(ErrorMessage = "Password required")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
