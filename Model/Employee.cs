@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Employee
+    public class Employee : IdentityUser
     {
-        [Key]
         public string EmployeeCode { get; set; }
         [Required]
         public string Name { get; set; }
