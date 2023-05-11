@@ -45,16 +45,16 @@ namespace ProjectManagementSystem.Controllers
                         {
                             case "Admin":
                                 HttpContext.Response.Cookies.Append("role", roles);
-                                return RedirectToAction("Dashboard");
+                                return RedirectToAction("Index","Project");
                             case "ProjectManager":
                                 HttpContext.Response.Cookies.Append("role", roles);
-                                return RedirectToAction("Dashboard");
+                                return RedirectToAction("Index","Project");
                             case "TeamLead":
                                 HttpContext.Response.Cookies.Append("role", roles);
-                                return RedirectToAction("Dashboard");
+                                return RedirectToAction("Index","Project");
                             case "Developer":
                                 HttpContext.Response.Cookies.Append("role", roles);
-                                return RedirectToAction("Dashboard");
+                                return RedirectToAction("Index", "Project");
                             default:
                                 return View("Login");
                         }

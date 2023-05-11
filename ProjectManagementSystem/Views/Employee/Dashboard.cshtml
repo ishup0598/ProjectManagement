@@ -8,15 +8,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end height-15">
-                <ul class=" navbar-nav flex-grow-4 mr-auto">
-                    @*<li class="nav-item">
-                        @if (ViewBag.role == "Admin")
-                        {
-                            <form method="post">
-                                <a class="nav-link text-dark float-end m-4" asp-area="" asp-controller="Product" asp-action="Create"> Add Product </a>                              
-                            </form>
-                        }
-                    </li>*@
+                <ul class=" navbar-nav flex-grow-4 mr-auto">                   
+                    <li class="nav-item">
+                        <a class="nav-link text-dark float-end m-4" asp-controller="Project" asp-action="Index"> Projects </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark float-end m-4"  asp-controller="Employee" asp-action="Logout" value="Logout"> Logout </a>
                     </li>
